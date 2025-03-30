@@ -4,7 +4,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 
 public class IoCContainer {
-
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(AppConfig.class);
         MyService service = context.getBean(MyService.class);
